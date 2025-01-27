@@ -5,7 +5,10 @@ title = "Lotus Docs | A Hugo Documentation Theme"
 contentDir = "content"
 enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
-# googleAnalytics = "G-VXQVVP7V8K" # (or set via env variable HUGO_GOOGLEANALYTICS)
+
+# [services]
+#   [services.googleAnalytics]
+#     id = 'G-VXQVVP7V8K'
 
 [build]
   noJSConfigInAssets = true
