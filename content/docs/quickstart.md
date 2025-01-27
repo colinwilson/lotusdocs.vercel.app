@@ -23,8 +23,8 @@ twitter:
 ## Requirements
 
 - **git**
-- **Go ≥ v1.19**
-- **Hugo ≥ v0.117.0** (**Extended Version**)
+- **Go ≥ v1.21**
+- **Hugo ≥ v0.140.0** (**Extended Version**)
 
 ## Install Hugo
 

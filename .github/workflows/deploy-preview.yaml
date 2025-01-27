@@ -51,12 +51,12 @@ jobs:
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.120.4"
+          hugo-version: "0.142.0"
           extended: true
 
       # Step 4 - Builds the site using Hugo
       - name: Build
-        run: hugo -v -D -e staging
+        run: hugo --logLevel info -D -e staging
         env:
           # HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
           HUGO_PARAMS_DOCSEARCH_appID: ${{ vars.DOCSEARCH_APPID }}
@@ -107,6 +107,6 @@ jobs:
         id: docsearch-scrape
         uses: adapttive/algolia-docsearch-action@1.1.1
         env:
-          APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
-          API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+          APPLICATION_ID: ${{ secrets.DOCSEARCH_APP_ID }}
+          API_KEY: ${{ secrets.DOCSEARCH_WRITE_API_KEY_PREVIEW }}
           CONFIG: ${{ steps.docsearch-config.outputs.config }}

@@ -170,7 +170,7 @@ Use the following steps to get your Lotus Docs site up and running on GitLab Pag
 6. Copy and paste the YAML below into the job file you created.
 
     ```yaml
-    image: registry.gitlab.com/pages/hugo/hugo_extended:0.118.2
+    image: registry.gitlab.com/pages/hugo/hugo_extended:0.140.2
 
     variables:
       HUGO_ENV: production

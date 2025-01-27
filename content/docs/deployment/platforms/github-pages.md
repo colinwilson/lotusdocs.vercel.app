@@ -194,7 +194,7 @@ Use the following steps to get your Lotus Docs site up and running on GitHub Pag
     build:
         runs-on: ubuntu-latest
         env:
-        HUGO_VERSION: 0.118.2
+        HUGO_VERSION: 0.142.0
         steps:
         - name: Install Hugo CLI
             run: |
