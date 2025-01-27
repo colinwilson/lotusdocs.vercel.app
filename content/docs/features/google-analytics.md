@@ -23,14 +23,18 @@ To enable Google Analytics v4, simply provide your tracking ID in your configura
 {{% tab tabName="hugo.toml" %}}
 
 ```toml
-googleAnalytics = 'G-MEASUREMENT_ID'
+[services]
+    [services.googleAnalytics]
+        id = 'G-MEASUREMENT_ID'
 ```
 
 {{% /tab %}}
 {{% tab tabName="hugo.yaml" %}}
 
 ```yaml
-googleAnalytics: G-MEASUREMENT_ID
+services:
+    googleAnalytics:
+        id: G-MEASUREMENT_ID
 ```
 
 {{% /tab %}}
@@ -38,7 +42,11 @@ googleAnalytics: G-MEASUREMENT_ID
 
 ```json
 {
-   "googleAnalytics": "G-MEASUREMENT_ID"
+   "services": {
+        "googleAnalytics": {
+            "id": "G-MEASUREMENT_ID"
+        }
+   }
 }
 ```
 
