@@ -56,7 +56,7 @@ jobs:
 
       # Step 4 - Builds the site using Hugo
       - name: Build
-        run: hugo -v --minify
+        run: hugo --logLevel info --minify
         env:
           HUGO_BASEURL: ${{ vars.BASE_URL }}
           # HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
