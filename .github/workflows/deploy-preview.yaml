@@ -107,6 +107,6 @@ jobs:
         id: docsearch-scrape
         uses: adapttive/algolia-docsearch-action@1.1.1
         env:
-          APPLICATION_ID: ${{ vars.DOCSEARCH_APPID }}
+          APPLICATION_ID: ${{ secrets.DOCSEARCH_APPID }}
           API_KEY: ${{ secrets.DOCSEARCH_WRITE_API_KEY }}
           CONFIG: ${{ steps.docsearch-config.outputs.config }}
