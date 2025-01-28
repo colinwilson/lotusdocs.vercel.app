@@ -94,8 +94,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # Step 2 -  Perform DocSearch crawl only if content files were changed
-      - name: Algolia crawl on content update
+      # Step 2 -  Perform DocSearch crawl and reindex of the site contents
+      - name: Algolia crawl and reindex
         uses: algolia/algoliasearch-crawler-github-actions@v1.1.13
         id: docsearch-crawl
         with:
