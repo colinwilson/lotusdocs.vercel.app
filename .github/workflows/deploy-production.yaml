@@ -11,7 +11,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains two jobs called "deploy-production" and "docsearch-scrape"
+  # This workflow contains two jobs called "deploy-production" and "docsearch-crawl"
   deploy-production:
     # The environment this job references
     environment:
@@ -80,8 +80,7 @@ jobs:
 
   docsearch-crawl:
     # The environment this job references
-    environment:
-      name: Production
+    environment: Production
 
       # The type of runner that the job will run on
       runs-on: ubuntu-20.04
