@@ -79,6 +79,9 @@ jobs:
           working-directory: public
 
   docsearch-crawl:
+    # The environment this job references
+    environment:
+      name: Production
 
       # The type of runner that the job will run on
       runs-on: ubuntu-20.04

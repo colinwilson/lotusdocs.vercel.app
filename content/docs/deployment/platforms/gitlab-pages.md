@@ -11,7 +11,7 @@ toc: true
 
 ## Overview
 
-With [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/), you can publish your Lotus Docs site directly from a repository in GitLab.
+With [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/), you can publish your Lotus Docs themed site directly from a repository in GitLab.
 
 - Use for any personal or business website.
 - Native support for Hugo.
