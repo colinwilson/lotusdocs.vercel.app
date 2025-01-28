@@ -20,7 +20,7 @@ With [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/), you can pub
 - Connect your custom domains and TLS certificates.
 - Attribute any license to your content.
 
-GitLab makes it easy to build, deploy, and host your Lotus Docs website via their free GitLab Pages service.
+GitLab Pages makes it easy to build, deploy, and host your Lotus Docs website.
 
 ## Prerequisites
 
